@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async defer></script>
+    <title>Ball Game</title>
+</head>
+<body>
+    <div class="inputSubmitDiv">
+        <h1>Welcome to Game!</h1>
+        <input type="text" id="ballCount">
+        <button onclick="setCount()" class="submitBtn" >submit</button>
+    </div>
+    <div class="displayScore">
+        <label id="chances"></label>
+    </div>
+    <div class="ballDivClass">
+        <div id="ballDiv"></div>   
+        <button class="resetBtn" onclick="resetGame()">Restart</button> 
+    </div>
+    <div id="ballDiv"></div>
+    <script src="balls.js"></script>
+</body>
+</html>

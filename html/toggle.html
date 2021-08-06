@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- var img =  -->
+    <button id="btn1" value="click" onclick="enableDisableImg()">change</button>
+    <img id="img" src="image.jpg" style="visibility:visible" width="400" height="500">
+
+    <script>
+        var img = document.getElementById("img");
+        function enableDisableImg(){
+            if(img.style.visibility=='visible'){
+                img.style.visibility='hidden';
+                return;
+            }
+            img.style.visibility='visible';
+            
+            
+        }
+    </script>
+</body>
+</html>

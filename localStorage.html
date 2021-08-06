@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <script>
+        const student=[{name:"vaibhav",id:1,cgpa:7.9},{name:"harish",id:2,cgpa:8.9},{name:"atul",id:3,cgpa:7.2},
+                    {name:"aarti",id:4,cgpa:7.0},{name:"monu",id:5,cgpa:8.0}];
+        const data={
+            name:"vaibhav",
+            age:"22",
+            mob:"1234"
+        }
+        localStorage.setItem("data",JSON.stringify(data));
+        sessionStorage.setItem("session",JSON.stringify(data));
+        localStorage.getItem('student',JSON.stringify(student[0]));    
+        console.log(localStorage.getItem('data'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+</head>
+<body>
+    
+    <button id="btn1">red</button>
+    <button id="btn2">blue</button>
+    
+    <script>
+       document.getElementById("btn1").addEventListener("click",eventHandler);
+       document.getElementById("btn2").addEventListener("click",eventHandler);
+
+       function eventHandler(){
+           buttonId = event.target.id;
+        //    buttonId == "btn1"? redBackground():blueBackground();
+           if(buttonId=="btn1"){
+               redBackground()
+               return;
+           }
+           blueBackground();
+       }
+        function redBackground(){
+            document.body.style.backgroundColor = "red";
+        }
+        function blueBackground(){
+            document.body.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>
